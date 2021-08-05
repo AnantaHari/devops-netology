@@ -1,67 +1,37 @@
-1. Найдите полный хеш и комментарий коммита, хеш которого начинается на aefea.
+1. Ознакомьтесь с графическим интерфейсом VirtualBox, посмотрите как выглядит виртуальная машина, которую создал для вас Vagrant, какие аппаратные ресурсы ей выделены. Какие ресурсы выделены по-умолчанию?
 
-$ git show aefea
-commit aefead2207ef7e2aa5dc81a34aedf0cad4c32545
-Комментарий: Update CHANGELOG.md
+Ей выделено 1Гб памяти, 2 ядра процессора, 64Гб HDD
 
+2. Ознакомьтесь с возможностями конфигурации VirtualBox через Vagrantfile: документация. Как добавить оперативной памяти или ресурсов процессора виртуальной машине?
+```
+config.vm.provider "virtualbox" do |v|
+  v.memory = 1024
+  v.cpus = 2
+end
+```
+3. Ознакомиться с разделами man bash, почитать о настройках самого bash:
 
-2. Какому тегу соответствует коммит 85024d3?
+какой переменной можно задать длину журнала history, и на какой строчке manual это описывается?
 
-$ git log 85024d3
-(tag: v0.12.23)
-
-
-3. Сколько родителей у коммита b8d720? Напишите их хеши.
-
-$ git show b8d720
-commit b8d720f8340221f2146e4e4870bf2ee0bc48f2d5
-Merge: 56cd7859e 9ea88f22f
-
-Два родителя
-$ git show b8d720^
-commit 56cd7859e05c36c06b56d013b55a252d0bb7e158
-$ git show b8d720^2
-commit 9ea88f22fc6269854151c571162c5bcf958bee2b
+history_max_entries
+Строчка 325
 
 
-4. Перечислите хеши и комментарии всех коммитов которые были сделаны между тегами v0.12.23 и v0.12.24.
+что делает директива ignoreboth в bash?
+A  colon-separated  list of values controlling how commands are saved on the history list.  If the list of values includes ignorespace, lines which begin with a space character are not saved in  the  history list.  A value of ignoredups causes lines matching the previous history entry to not be saved.  A value of ignoreboth is shorthand for ignorespace and ignoredups.
+Т.е. ignoreboth объединяет действие команд ignorespace и ignoredups (в историю не запишутся строки, которые начинаются с пробела и если в истории уже есть такая запись, то такая же записана не будет.
 
-$ git log v0.12.23..v0.12.24 --oneline
-33ff1c03b (tag: v0.12.24) v0.12.24
-b14b74c49 [Website] vmc provider links
-3f235065b Update CHANGELOG.md
-6ae64e247 registry: Fix panic when server is unreachable
-5c619ca1b website: Remove links to the getting started guide's old location
-06275647e Update CHANGELOG.md
-d5f9411f5 command: Fix bug when using terraform login on Windows
-4b6d06cc5 Update CHANGELOG.md
-dd01a3507 Update CHANGELOG.md
-225466bc3 Cleanup after v0.12.23 release
+В каких сценариях использования применимы скобки {} и на какой строчке man bash это описано?
 
+Основываясь на предыдущем вопросе, как создать однократным вызовом touch 100000 файлов? А получилось ли создать 300000?
 
-5. Найдите коммит в котором была создана функция func providerSource, ее определение в коде выглядит так func providerSource(...) (вместо троеточего перечислены аргументы).
+В man bash поищите по /\[\[. Что делает конструкция [[ -d /tmp ]]
 
-$ git log -S'func providerSource(' --oneline
-8c928e835 main: Consult local directories as potential mirrors of providers
+Основываясь на знаниях о просмотре текущих (например, PATH) и установке новых переменных; командах, которые мы рассматривали, добейтесь в выводе type -a bash в виртуальной машине наличия первым пунктом в списке:
 
+bash is /tmp/new_path_directory/bash
+bash is /usr/local/bin/bash
+bash is /bin/bash
+(прочие строки могут отличаться содержимым и порядком)
 
-6. Найдите все коммиты в которых была изменена функция globalPluginDirs.
-
-$ git log -SglobalPluginDirs --oneline
-35a058fb3 main: configure credentials from the CLI config file
-c0b176109 prevent log output during init
-8364383c3 Push plugin discovery down into command package
-Функция globalPluginDirs упоминается в перечисленных выше коммитах.
-Изменена в этом коммите:
-$ git log -L :globalPluginDirs:plugins.go
-commit 78b12205587fe839f10d946ea3fdc06719decb05
-
-
-7. Кто автор функции synchronizedWriters?
-
-$ git show 5ac311e2a
-commit 5ac311e2a91e381e2f52234668b49ba670aa0fe5
-Author: Martin Atkins <mart@degeneration.co.uk>
-Date:   Wed May 3 16:25:41 2017 -0700
-
-Автор: Martin Atkins <mart@degeneration.co.uk>
+Чем отличается планирование команд с помощью batch и at?
