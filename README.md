@@ -7,6 +7,25 @@ HOST: stackoverflow.com
 [press enter]
 В ответе укажите полученный HTTP код, что он означает?
 ```
+HTTP/1.1 301 Moved Permanently
+cache-control: no-cache, no-store, must-revalidate
+location: https://stackoverflow.com/questions
+x-request-guid: da5ad868-168f-4fee-b880-b2bb1bbed687
+feature-policy: microphone 'none'; speaker 'none'
+content-security-policy: upgrade-insecure-requests; frame-ancestors 'self' https://stackexchange.com
+Accept-Ranges: bytes
+Date: Wed, 08 Sep 2021 18:16:55 GMT
+Via: 1.1 varnish
+Connection: close
+X-Served-By: cache-hhn4042-HHN
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1631125015.356543,VS0,VE85
+Vary: Fastly-SSL
+X-DNS-Prefetch-Control: off
+Set-Cookie: prov=7c7d8c9f-380e-084c-dd67-b180b03306ea; domain=.stackoverflow.com; expires=Fri, 01-Jan-2055 00:00:00 GMT; path=/; HttpOnly
+
+Получаем ответ сервера. Основное здесь это код 301 - это код постоянного редиректа на другой адрес
 ```
 
 2. Повторите задание 1 в браузере, используя консоль разработчика F12.
