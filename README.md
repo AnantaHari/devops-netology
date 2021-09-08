@@ -35,6 +35,12 @@ Set-Cookie: prov=7c7d8c9f-380e-084c-dd67-b180b03306ea; domain=.stackoverflow.com
 укажите в ответе полученный HTTP код.
 проверьте время загрузки страницы, какой запрос обрабатывался дольше всего?
 приложите скриншот консоли браузера в ответ.
+```
+Status Code: 301 Moved Permanently
+
+![image](https://user-images.githubusercontent.com/87232557/132569492-c01345e6-687f-4e2b-8f63-5d4da3228901.png)
+
+```
 3. Какой IP адрес у вас в интернете?
 ```
 ```
