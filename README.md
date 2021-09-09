@@ -90,8 +90,61 @@ traceroute -An - в Ubuntu не работает, нет такого парам
 ```
 7. Какие DNS сервера отвечают за доменное имя dns.google? Какие A записи? воспользуйтесь утилитой dig
 ```
+dns.google.		10800	IN	NS	ns1.zdns.google.
+dns.google.		10800	IN	NS	ns4.zdns.google.
+dns.google.		10800	IN	NS	ns2.zdns.google.
+dns.google.		10800	IN	NS	ns3.zdns.google.
+Эти DNS сервера отвечают за доменное имя dns.google
 
+dns.google.		900	IN	A	8.8.8.8
+dns.google.		900	IN	A	8.8.4.4
+Это A записи
 ```
 8. Проверьте PTR записи для IP адресов из задания 7. Какое доменное имя привязано к IP? воспользуйтесь утилитой dig
 ```
+anantahari@ubuntu:~$ dig -x 8.8.8.8
+
+; <<>> DiG 9.16.8-Ubuntu <<>> -x 8.8.8.8
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 15524
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;8.8.8.8.in-addr.arpa.		IN	PTR
+
+;; ANSWER SECTION:
+8.8.8.8.in-addr.arpa.	3408	IN	PTR	dns.google.
+
+;; Query time: 16 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53)
+;; WHEN: Wed Sep 08 22:35:40 PDT 2021
+;; MSG SIZE  rcvd: 73
+
+nantahari@ubuntu:~$ dig -x 8.8.4.4
+
+; <<>> DiG 9.16.8-Ubuntu <<>> -x 8.8.4.4
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 26647
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 65494
+;; QUESTION SECTION:
+;4.4.8.8.in-addr.arpa.		IN	PTR
+
+;; ANSWER SECTION:
+4.4.8.8.in-addr.arpa.	5396	IN	PTR	dns.google.
+
+;; Query time: 8 msec
+;; SERVER: 127.0.0.53#53(127.0.0.53)
+;; WHEN: Wed Sep 08 22:39:01 PDT 2021
+;; MSG SIZE  rcvd: 73
+
+Для 8.8.8.8 и 8.8.4.4 доменное имя dns.google.
+
+
 ```
