@@ -52,6 +52,27 @@ C:\Users\kveta>ipconfig
    IPv4-адрес. . . . . . . . . . . . : 192.168.100.23
    Маска подсети . . . . . . . . . . : 255.255.255.0
    Основной шлюз. . . . . . . . . : 192.168.100.1
+   
+Еще можно посмотреть так:
+anantahari@ubuntu:~$ ifconfig -a
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.100.17  netmask 255.255.255.0  broadcast 192.168.100.255
+        inet6 fe80::c261:a54a:914f:4a7e  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:75:82:e0  txqueuelen 1000  (Ethernet)
+        RX packets 2806  bytes 1369323 (1.3 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1899  bytes 549399 (549.3 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 761  bytes 77010 (77.0 KB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 761  bytes 77010 (77.0 KB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
 ```
 
 2. Какой протокол используется для распознавания соседа по сетевому интерфейсу? Какой пакет и команды есть в Linux для этого?
@@ -65,11 +86,20 @@ C:\Users\kveta>ipconfig
 ```
 Технология VLAN позволяет разделить коммутатор на несколько виртуальных сетей.
 Установка пакета производится командой apt install vlan
-
+anantahari@ubuntu:~$ cat /etc/network/interfaces
+auto eth0.1400
+iface eth0.1400 inet static
+        address 192.168.1.1
+        netmask 255.255.255.0
+        vlan_raw_device eth0
 ```
 
 4. Какие типы агрегации интерфейсов есть в Linux? Какие опции есть для балансировки нагрузки? Приведите пример конфига.
 ```
+Типы агрегации (LAG):
+статический (на Cisco mode on);
+динамический – LACP протокол (на Cisco mode active).
+
 ```
 
 5. Сколько IP адресов в сети с маской /29 ? Сколько /29 подсетей можно получить из сети с маской /24. Приведите несколько примеров /29 подсетей внутри сети 10.10.10.0/24.
