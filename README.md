@@ -204,7 +204,13 @@ C:\Users\kveta>arp -a
   netsh interface ip delete arpcache
   
 В Linux:
+anantahari@ubuntu:~$ ip neigh
+192.168.23.2 dev ens33 lladdr 00:50:56:e8:60:9b STALE
+192.168.23.254 dev ens33 lladdr 00:50:56:fd:39:d5 STALE
 
+Удалить один ip - sudo ip neigh del 192.168.11.100 dev ens33
+чистить ARP кеш полностью:
+sudo ip neigh flush all
 ```
 
 Задание для самостоятельной отработки (необязательно к выполнению)
