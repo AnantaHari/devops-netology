@@ -212,10 +212,3 @@ anantahari@ubuntu:~$ ip neigh
 чистить ARP кеш полностью:
 sudo ip neigh flush all
 ```
-
-Задание для самостоятельной отработки (необязательно к выполнению)
-8*. Установите эмулятор EVE-ng.
-
-Инструкция по установке - https://github.com/svmyasnikov/eve-ng
-
-Выполните задания на lldp, vlan, bonding в эмуляторе EVE-ng.
