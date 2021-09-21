@@ -1,7 +1,7 @@
 1. Проверьте список доступных сетевых интерфейсов на вашем компьютере. Какие команды есть для этого в Linux и в Windows?
 ```
 Список интерфейсов и их адреса в Линукс:
-nantahari@ubuntu:~$ ip -c -br link
+anantahari@ubuntu:~$ ip -c -br link
 lo               UNKNOWN        00:00:00:00:00:00 <LOOPBACK,UP,LOWER_UP> 
 ens33            UP             00:0c:29:75:82:e0 <BROADCAST,MULTICAST,UP,LOWER_UP> 
 anantahari@ubuntu:~$ ip -c -br address
