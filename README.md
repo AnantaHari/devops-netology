@@ -324,3 +324,14 @@ Nmap done: 1 IP address (1 host up) scanned in 7.92 seconds
 ```
 
 9*. Установите и настройте фаервол ufw на web-сервер из задания 3. Откройте доступ снаружи только к портам 22,80,443
+```
+alexander@alexander-comp:/var/www/radhe$ sudo ufw status
+Status: active
+
+To                         Action      From
+--                         ------      ----
+Apache Full                ALLOW       Anywhere                  
+22                         ALLOW       Anywhere                  
+Apache Full (v6)           ALLOW       Anywhere (v6)             
+22 (v6)                    ALLOW       Anywhere (v6)           
+```
