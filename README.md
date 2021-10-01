@@ -13,7 +13,7 @@
 3.Установите apache2, сгенерируйте самоподписанный сертификат, настройте тестовый сайт для работы по HTTPS.
 ```
 Получилось:
-![image](https://user-images.githubusercontent.com/87232557/135400044-1d67cdf1-9f1f-49a0-b41d-529b141b64f5.png)
+![image](https://user-images.githubusercontent.com/87232557/135605983-8e966984-2110-4981-b3c5-e1ae319edd2e.png)
 
 ```
 
@@ -290,10 +290,37 @@ Last login: Fri Oct  1 00:18:32 2021 from 192.168.100.180
 
 7. Соберите дамп трафика утилитой tcpdump в формате pcap, 100 пакетов. Откройте файл pcap в Wireshark.
 ```
+alexander@alexander-comp:~$ sudo tcpdump -c 100 -w 0001.pcap
+[sudo] password for alexander: 
+tcpdump: listening on wlx3c7c3f498678, link-type EN10MB (Ethernet), capture size 262144 bytes
+100 packets captured
+128 packets received by filter
+0 packets dropped by kernel
+![image](https://user-images.githubusercontent.com/87232557/135604237-0b0264bf-36f1-4285-ac18-d4ff95297202.png)
 
 ```
 
 Задание для самостоятельной отработки (необязательно к выполнению)
 8*. Просканируйте хост scanme.nmap.org. Какие сервисы запущены?
+```
+anantahari@ubuntu:~$ sudo nmap -O scanme.nmap.org
+Starting Nmap 7.80 ( https://nmap.org ) at 2021-10-01 02:50 PDT
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.18s latency).
+Other addresses for scanme.nmap.org (not scanned): 2600:3c01::f03c:91ff:fe18:bb2f
+Not shown: 996 closed ports
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+9929/tcp  open  nping-echo
+31337/tcp open  Elite
+Aggressive OS guesses: Linux 2.6.32 - 3.13 (95%), Linux 2.6.22 - 2.6.36 (93%), Linux 3.10 - 4.11 (93%), Linux 3.10 (93%), Linux 2.6.32 (92%), Linux 3.2 - 4.9 (92%), Linux 2.6.32 - 3.10 (92%), Linux 2.6.18 (92%), Linux 3.16 - 4.6 (92%), HP P2000 G3 NAS device (92%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 16 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.92 seconds
+
+```
 
 9*. Установите и настройте фаервол ufw на web-сервер из задания 3. Откройте доступ снаружи только к портам 22,80,443
