@@ -1,3 +1,6 @@
+1 урок - bash
+
+2 урок - python
 import subprocess  
 import socket  
 socket.gethostbyname('google.com')  
