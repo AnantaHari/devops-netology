@@ -5,3 +5,4 @@ socket.gethostbyname('google.com')
 socket.gethostbyname_ex('google.com')
 ('google.com', [], ['64.233.164.100', '64.233.164.139', '64.233.164.138', '64.233.164.113', '64.233.164.102', '64.233.164.101']) 
 
+

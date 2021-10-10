@@ -297,7 +297,6 @@ tcpdump: listening on wlx3c7c3f498678, link-type EN10MB (Ethernet), capture size
 128 packets received by filter
 0 packets dropped by kernel
 ![image](https://user-images.githubusercontent.com/87232557/135604237-0b0264bf-36f1-4285-ac18-d4ff95297202.png)
-
 ```
 
 Задание для самостоятельной отработки (необязательно к выполнению)
