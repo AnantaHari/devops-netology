@@ -96,4 +96,5 @@ drwxr-xr-x  2 root       root       4096 ноя  8 16:29 kasm-user/
 
 Соберите Docker образ с Ansible, загрузите на Docker Hub и пришлите ссылку вместе с остальными ответами к задачам.
 ```
+docker pull kvetalex/ansible:2.9.24
 ```
