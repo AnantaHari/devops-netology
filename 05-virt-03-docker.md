@@ -19,6 +19,7 @@ Hey, Netology
 ```
 https://hub.docker.com/r/kvetalex/nginx-new-index
 docker pull kvetalex/nginx-new-index
+http://172.17.0.2/
 ```
 
 Задача 2  
