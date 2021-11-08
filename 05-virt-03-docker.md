@@ -72,8 +72,12 @@ Gitlab сервер для реализации CI/CD процессов и пр
 Подключитесь во второй контейнер и отобразите листинг и содержание файлов в /data контейнера.  
 ```
 [root@20c1dfd9f897 home]# vi deb
+[root@20c1dfd9f897 home]# ls
+1  11  12  3  deb  kasm-user  pam.conf
+
 root@aaa26d0b1c6c:/home# ls
 1  11  12  3  deb  kasm-user  pam.conf
+
 anantahari@ubuntu:~/data$ ll
 total 20
 drwxrwxr-x  3 anantahari anantahari 4096 ноя  8 16:53 ./
