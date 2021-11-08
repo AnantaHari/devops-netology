@@ -5,6 +5,7 @@
 выберете любой образ, который содержит веб-сервер Nginx;
 создайте свой fork образа;
 реализуйте функциональность: запуск веб-сервера в фоне с индекс-страницей, содержащей HTML-код ниже:
+```
 <html>
 <head>
 Hey, Netology
@@ -13,6 +14,7 @@ Hey, Netology
 <h1>I’m DevOps Engineer!</h1>
 </body>
 </html>
+```
 Опубликуйте созданный форк в своем репозитории и предоставьте ответ в виде ссылки на https://hub.docker.com/username_repo.
 ```
 https://hub.docker.com/r/kvetalex/nginx-new-index
