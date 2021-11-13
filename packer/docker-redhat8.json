@@ -1,0 +1,17 @@
+{
+  "builders": [
+    {
+      "image": "redhat/ubi8:latest",
+      "type": "docker",
+      "commit": true
+    }
+  ],
+  "provisioners": [
+    {
+      "inline": [
+        "yum -y update"
+      ],
+      "type": "shell"
+    }
+  ]
+}
