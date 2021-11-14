@@ -21,7 +21,6 @@
 
 ```
 ![image](https://user-images.githubusercontent.com/87232557/141696365-74fc1795-d212-40c0-a902-d131c13e1a7a.png)
-
 ```
 
 ## Задача 3
@@ -35,7 +34,6 @@
 </p>
 ```
 ![image](https://user-images.githubusercontent.com/87232557/141696336-4967ec43-93f3-46eb-b5c1-7b6c39775ea3.png)
-
 ```
 
 ## Задача 4 (*)
