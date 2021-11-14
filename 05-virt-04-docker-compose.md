@@ -20,7 +20,7 @@
 </p>
 
 ```
-![image](https://user-images.githubusercontent.com/87232557/141693211-d145db7b-038b-44b2-949e-bbdc5713f684.png)
+![image](https://user-images.githubusercontent.com/87232557/141696365-74fc1795-d212-40c0-a902-d131c13e1a7a.png)
 
 ```
 
@@ -33,6 +33,10 @@
 <p align="center">
   <img width="1200" height="600" src="./assets/yc_02.png">
 </p>
+```
+![image](https://user-images.githubusercontent.com/87232557/141696336-4967ec43-93f3-46eb-b5c1-7b6c39775ea3.png)
+
+```
 
 ## Задача 4 (*)
 
