@@ -4,6 +4,9 @@
 
 Для получения зачета, вам необходимо предоставить:
 - Скриншот страницы, как на слайде из презентации (слайд 37).
+```
+![Screenshot from 2021-11-13 18-08-44](https://user-images.githubusercontent.com/87232557/141648941-2d52c1f0-a8da-4878-87e0-f8ed8698a89e.png)
+```
 
 ## Задача 2
 
@@ -16,6 +19,10 @@
   <img width="1200" height="600" src="./assets/yc_01.png">
 </p>
 
+```
+![image](https://user-images.githubusercontent.com/87232557/141696365-74fc1795-d212-40c0-a902-d131c13e1a7a.png)
+```
+
 ## Задача 3
 
 Создать ваш первый готовый к боевой эксплуатации компонент мониторинга, состоящий из стека микросервисов.
@@ -25,6 +32,9 @@
 <p align="center">
   <img width="1200" height="600" src="./assets/yc_02.png">
 </p>
+```
+![image](https://user-images.githubusercontent.com/87232557/141696336-4967ec43-93f3-46eb-b5c1-7b6c39775ea3.png)
+```
 
 ## Задача 4 (*)
 
