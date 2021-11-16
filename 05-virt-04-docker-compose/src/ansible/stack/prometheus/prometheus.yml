@@ -26,12 +26,12 @@ scrape_configs:
   - job_name: 'nodeexporter2'
     scrape_interval: 5s
     static_configs:
-      - targets: ['51.250.1.212:9100']
+      - targets: ['51.250.7.96:9100']
 
   - job_name: 'cadvisor2'
     scrape_interval: 5s
     static_configs:
-      - targets: ['51.250.1.212:8080']
+      - targets: ['51.250.7.96:8080']
 
   - job_name: 'prometheus'
     scrape_interval: 10s
