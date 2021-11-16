@@ -47,3 +47,11 @@
 https://skr.sh/sB34Swh3dQj
 http://51.250.6.10:3000/d/d-Xsgscnk/monitor-services-copy?orgId=1&refresh=10s
 ```
+
+
+Полезные команды
+```
+curl -X POST http://admin:admin@ip:9090/-/reload
+sudo docker-compose stop prometheus
+sudo docker-compose up -d
+```
