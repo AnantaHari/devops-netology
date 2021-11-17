@@ -43,12 +43,13 @@
 Для получения зачета, вам необходимо предоставить:
 - Скриншот из Grafana, на котором будут отображаться метрики добавленного вами сервера.
 
-```
+
 <p align="center">
   <img width="1200" height="600" src="./screenshots/4-4Swh3dQj.jpg">
 </p>
+
 http://51.250.6.10:3000/d/d-Xsgscnk/monitor-services-copy?orgId=1&refresh=10s
-```
+
 
 
 Полезные команды
