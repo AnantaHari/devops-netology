@@ -1,10 +1,5 @@
 # Домашнее задание к занятию "6.3. MySQL"
 
-## Введение
-
-Перед выполнением задания вы можете ознакомиться с 
-[дополнительными материалами](https://github.com/netology-code/virt-homeworks/tree/master/additional/README.md).
-
 ## Задача 1
 
 Используя docker поднимите инстанс MySQL (версию 8). Данные БД сохраните в volume.
@@ -23,6 +18,62 @@
 **Приведите в ответе** количество записей с `price` > 300.
 
 В следующих заданиях мы будем продолжать работу с данным контейнером.
+
+```
+mysql> \s
+--------------
+mysql  Ver 8.0.27 for Linux on x86_64 (MySQL Community Server - GPL)
+
+Connection id:		9
+Current database:	
+Current user:		root@localhost
+SSL:			Not in use
+Current pager:		stdout
+Using outfile:		''
+Using delimiter:	;
+Server version:		8.0.27 MySQL Community Server - GPL
+Protocol version:	10
+Connection:		Localhost via UNIX socket
+Server characterset:	utf8mb4
+Db     characterset:	utf8mb4
+Client characterset:	latin1
+Conn.  characterset:	latin1
+UNIX socket:		/var/run/mysqld/mysqld.sock
+Binary data as:		Hexadecimal
+Uptime:			3 min 29 sec
+
+Threads: 2  Questions: 5  Slow queries: 0  Opens: 117  Flush tables: 3  Open tables: 36  Queries per second avg: 0.023
+--------------
+
+mysql> show tables;
++--------------+
+| Tables_in_db |
++--------------+
+| orders       |
++--------------+
+1 row in set (0.00 sec)
+
+mysql> select * from orders;
++----+-----------------------+-------+
+| id | title                 | price |
++----+-----------------------+-------+
+|  1 | War and Peace         |   100 |
+|  2 | My little pony        |   500 |
+|  3 | Adventure mysql times |   300 |
+|  4 | Server gravity falls  |   300 |
+|  5 | Log gossips           |   123 |
++----+-----------------------+-------+
+5 rows in set (0.00 sec)
+
+mysql> select * from orders where price > 300;
++----+----------------+-------+
+| id | title          | price |
++----+----------------+-------+
+|  2 | My little pony |   500 |
++----+----------------+-------+
+1 row in set (0.00 sec)
+
+```
 
 ## Задача 2
 
