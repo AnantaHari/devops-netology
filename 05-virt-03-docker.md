@@ -98,3 +98,12 @@ drwxr-xr-x  2 root       root       4096 ноя  8 16:29 kasm-user/
 ```
 docker pull kvetalex/ansible:2.9.24
 ```
+
+Дополнительные команды:
+```
+sudo docker build -t kvetalex/elasticsearch:2.2 .
+sudo docker run -d -p 9200:9200 -p 9300:9300 kvetalex/elasticsearch:2.2
+sudo docker exec -it 57c875260630 bash
+sudo docker system prune -a -f
+
+```
