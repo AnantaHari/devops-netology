@@ -63,6 +63,7 @@ CMD ["/elasticsearch/bin/elasticsearch"]
 EXPOSE 9200
 EXPOSE 9300
 ```
+[elasticsearch.yml](https://github.com/AnantaHari/devops-netology/blob/main/06-db-05-elasticsearch/elasticsearch.yml)
 
 - ссылку на образ в репозитории dockerhub
 ```
