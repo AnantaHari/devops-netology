@@ -64,6 +64,11 @@ Packer, Terraform, Kubernetes, Ansible, Teamcity
 
 Установите терраформ при помощи менеджера пакетов используемого в вашей операционной системе.
 В виде результата этой задачи приложите вывод команды `terraform --version`.
+```
+anantahari@ubuntu:~$ terraform --version
+Terraform v1.1.0
+on linux_amd64
+```
 
 ## Задача 3. Поддержка легаси кода. 
 
@@ -74,11 +79,18 @@ Packer, Terraform, Kubernetes, Ansible, Teamcity
 
 В виде результата этой задачи приложите вывод `--version` двух версий терраформа доступных на вашем компьютере 
 или виртуальной машине.
+```
+Установил две версии Terraform в разные папки
+anantahari@ubuntu:~$ terraform110 --version
+Terraform v1.1.0
+on linux_amd64
 
----
+Your version of Terraform is out of date! The latest version
+is 1.1.1. You can update by downloading from https://www.terraform.io/downloads.html
+anantahari@ubuntu:~$ terraform1011 --version
+Terraform v1.0.11
+on linux_amd64
 
-### Как cдавать задание
-
-Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
-
----
+Your version of Terraform is out of date! The latest version
+is 1.1.1. You can update by downloading from https://www.terraform.io/downloads.html
+```
