@@ -1,2 +1,4 @@
 # Игнорировать ключ
 05-virt-04-docker-compose/src/terraform/key.json
+# Игнорировать ключи терраформа
+07-terraform-02-syntax/infrastructure-as-code-main/terraform/demo/vars.tf
