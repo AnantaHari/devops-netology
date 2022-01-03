@@ -83,3 +83,15 @@ CloudFormation
 ```
 https://github.com/AnantaHari/devops-netology/blob/main/07-terraform-02-syntax/infrastructure-as-code-main/terraform/demo/main.tf
 ``` 
+
+Комментарий преподавателя:
+```
+Конфиги выглядят не плохо, только учтите что в новой версии терраформа параметры можно указывать в таком формате:
+
+1
+platform_id = var.platform_id
+вместо такого:
+
+1
+platform_id = "${var.platform_id}"
+```
