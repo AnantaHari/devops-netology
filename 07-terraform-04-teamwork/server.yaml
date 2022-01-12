@@ -1,0 +1,17 @@
+repos:
+
+- id: https://github.com/AnantaHari/devops-netology
+  allow_custom_workflows: true
+  workflow: custom
+  allowed_workflows: [custom]
+
+  workflows:
+  custom:
+    plan:
+      steps:
+      - init
+      - plan:
+          extra_args: ["-lock=false"]
+    apply:
+      steps:
+      - apply
