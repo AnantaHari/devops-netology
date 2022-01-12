@@ -34,8 +34,10 @@
 1. Необходимо включить автопланирование при изменении любых файлов `*.tf`.
 
 В качестве результата приложите ссылку на файлы `server.yaml` и `atlantis.yaml`.
+```
 [atlantis.yaml](https://github.com/AnantaHari/devops-netology/blob/main/07-terraform-04-teamwork/atlantis.yaml)
 [server.yaml](https://github.com/AnantaHari/devops-netology/blob/main/07-terraform-04-teamwork/server.yaml)
+```
 
 ## Задача 3. Знакомство с каталогом модулей. 
 
