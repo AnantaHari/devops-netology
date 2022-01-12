@@ -49,3 +49,21 @@
 Создайте аналогичный инстанс при помощи найденного модуля.   
 
 В качестве результата задания приложите ссылку на созданный блок конфигураций. 
+```
+module "ec2_instance" {
+  source  = "terraform-aws-modules/ec2-instance/aws"
+  version = "~> 3.0"
+
+  name = "my-comp-module"
+
+  ami = "${local.workspace["ami"]}"
+  instance_type = "${local.workspace["instance_type"]}"
+  count = "${local.workspace["instance_count"]}"
+  tags = {
+    Name = "my-comp-${count.index}"
+  }
+  lifecycle {
+    create_before_destroy = true
+  }
+}
+```
