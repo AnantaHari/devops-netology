@@ -31,6 +31,7 @@
 ```
 ```
 psql -U pguser -d pgdb
+psql -h 192.168.4.82 -p 5432 -d qa -U postgres -W
 ```
 
 ## Задача 2
@@ -56,14 +57,14 @@ INFO:  "orders": scanned 1 of 1 pages, containing 8 live rows and 0 dead rows; 8
 ANALYZE
 ```
 
-Используя таблицу [pg_stats](https://postgrespro.ru/docs/postgresql/12/view-pg-stats), найдите столбец таблицы `orders` 
+Используя таблицу [pg_stats](https://postgrespro.ru/docs/postgresql/12/view-pg-stats), найдите столбец таблицы `orders`
 с наибольшим средним значением размера элементов в байтах.
 
 
 **Приведите в ответе** команду, которую вы использовали для вычисления и полученный результат.
 ```
 test_database=# select avg_width from pg_stats where tablename='orders';
- avg_width 
+ avg_width
 -----------
          4
         16
