@@ -1,11 +1,12 @@
 version: 3
 projects:
-- dir: project1
+- name: my-project-name1
+  dir: project1
   autoplan:
     when_modified: ["*.tf*"]
   workspace: stage
   workflow: stage
-- dir: project1
+  dir: project1
   autoplan:
     when_modified: ["*.tf*"]
   workspace: prod
