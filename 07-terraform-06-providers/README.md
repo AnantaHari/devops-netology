@@ -14,10 +14,31 @@
 
 1. Найдите, где перечислены все доступные `resource` и `data_source`, приложите ссылку на эти строки в коде на 
 гитхабе.   
+```
+[Дата соурсе](https://github.com/hashicorp/terraform-provider-aws/blob/ae957155681ffebf8798ed4c6374cb218687efb6/aws/provider.go#L186)
+[Ресурсы](https://github.com/hashicorp/terraform-provider-aws/blob/ae957155681ffebf8798ed4c6374cb218687efb6/aws/provider.go#L430)
+
 1. Для создания очереди сообщений SQS используется ресурс `aws_sqs_queue` у которого есть параметр `name`. 
     * С каким другим параметром конфликтует `name`? Приложите строчку кода, в которой это указано.
+    ```
+    "name": {
+				Type:          schema.TypeString,
+				Optional:      true,
+				ForceNew:      true,
+				Computed:      true,
+				ConflictsWith: []string{"name_prefix"},
+				ValidateFunc:  validateSQSQueueName,
+    ```
     * Какая максимальная длина имени? 
+    ```
+    [Длина и регулярное выражение](https://github.com/hashicorp/terraform-provider-aws/blob/ae957155681ffebf8798ed4c6374cb218687efb6/aws/validators.go#L1035)
+    Максимальная длинная - 80 символов
+    ```
     * Какому регулярному выражению должно подчиняться имя? 
+    ```
+    [Длина и регулярное выражение](https://github.com/hashicorp/terraform-provider-aws/blob/ae957155681ffebf8798ed4c6374cb218687efb6/aws/validators.go#L1035)
+    Имя может содержать буквы, цифры, дефис, подчеркивания, точки.
+    ```
     
 ## Задача 2. (Не обязательно) 
 В рамках вебинара и презентации мы разобрали как создать свой собственный провайдер на примере кофемашины. 
