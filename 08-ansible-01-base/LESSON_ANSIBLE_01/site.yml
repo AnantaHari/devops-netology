@@ -1,0 +1,12 @@
+---
+- name: First play
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: First task
+      debug:
+        msg: "{{ custom_var}}"
+      ignore_errors: true
+    - name: Second task
+      debug:
+        var: custom_var
