@@ -1,5 +1,5 @@
 Последовательность команд:  
-ansible-playbook -i inventory/hosts.yml site.yml. 
+ansible-playbook -i inventory/hosts.yml site.yml  
 docker run --name centos7 -d pycontribs/centos:7 sleep 6000000000  
 ansible-vault encrypt group_vars/prod/custom.yml  
 ansible-vault decrypt group_vars/prod/custom.yml  
