@@ -11,3 +11,6 @@ ansible-netology % ansible-playbook -i inventory/prod.yml site.yml --ask-vault-p
 ansible-inventory -i inventory/hosts.yml --graph  
 ansible-inventory -i inventory/hosts.yml --list  
 ansible-inventory -i inventory/hosts.yml --host localhost  
+  
+ansible-doc -t connection -l  
+ansible-doc -t connection ssh  
