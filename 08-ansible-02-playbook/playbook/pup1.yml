@@ -1,0 +1,58 @@
+---
+- name: First play
+  handlers:
+    - name: Restart vector
+      debug:
+        msg: Service vector is restarted
+      listen: restart observer
+    - name: Restart Clickhouse
+      debug:
+        msg: Service clickhouse is restarted
+      listen: restart observer
+  hosts: localhost
+  debugger: always #on_failed - когда таска failed
+  pre_tasks:
+    - name: First pre-task
+      debug:
+        msg: Run first pre-task
+      changed_when: true
+      notify: Restart Clickhouse
+      tags:
+        - never
+        - pre
+    - name: Second pre-task
+      debug:
+        msg: Run second pre-task
+      changed_when: true
+      notify: Restart Clickhouse
+      tags:
+        - always
+        - pre2
+  tasks:
+    - name: First task
+      debug:
+        msg: Run first task
+      changed_when: true
+      notify: Restart vector
+      tags:
+        - custom
+#    - include_tasks: #Для включения других файлов в task
+#        file: second.yml
+#      with_items: applications #Для зацикливания
+    - name: Second task
+      debug:
+        msg: Run second task
+      tags:
+        - custom
+        - another
+  post_tasks:
+    - name: First post-task
+      debug:
+        msg: Run first post-task
+      changed_when: true
+      notify: restart observer
+      tags:
+        - another
+    - name: Second post-task
+      debug:
+        msg: Run second post-task

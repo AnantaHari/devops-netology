@@ -1,0 +1,16 @@
+---
+- name: Get distr
+  hosts: servers
+  tasks:
+    - name: Get java distr
+      get_url:
+        url: "https://java.com/download/jdk-{{ java_version }}.tar.gz"
+        dest: "/tmp/"
+        mode: 0644
+      delegate_to: localhost
+      throttle: 1
+    - name: Unarchive distr
+      unarchive:
+        remote_src: true
+        src: "/tmp/jdk-{{ java_version }}.tar.gz"
+        dest: "/opt/jdk/{{ java_version }}"

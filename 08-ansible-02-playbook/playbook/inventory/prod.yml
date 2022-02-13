@@ -1,6 +1,7 @@
 ---
 elasticsearch:
   hosts:
-    localhost:
+    ubuntu:
+      ansible_host: 62.84.124.71
       ansible_connection: ssh
-      ansible_user: root
+      ansible_user: anantahari
