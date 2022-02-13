@@ -5,3 +5,9 @@ elasticsearch:
       ansible_host: 62.84.124.71
       ansible_connection: ssh
       ansible_user: anantahari
+logstash:
+  hosts:
+    ubuntu2:
+      ansible_host: 178.154.202.39
+      ansible_connection: ssh
+      ansible_user: anantahari
