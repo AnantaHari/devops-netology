@@ -75,6 +75,3 @@ bdfea50cc - James Bardin j.bardin@gmail.com
 
 git show bdfea50cc - удалена  
 git show 5ac311e2a - создана  
-
-**Ответ**  
-Author: Martin Atkins <mart@degeneration.co.uk>
