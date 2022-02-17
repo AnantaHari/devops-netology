@@ -11,19 +11,19 @@ resource "yandex_compute_instance" "node01" {
 
   boot_disk {
     initialize_params {
-      image_id    = "${var.centos-7-base}"
-      name        = "root-node01"
-      type        = "network-nvme"
-      size        = "50"
+      image_id = var.centos-7-base
+      name     = "root-node01"
+      type     = "network-nvme"
+      size     = "50"
     }
   }
 
   network_interface {
-    subnet_id = "${yandex_vpc_subnet.default.id}"
+    subnet_id = yandex_vpc_subnet.default.id
     nat       = true
   }
 
   metadata = {
-    ssh-keys = "anantahari:${file("~/.ssh/id_rsa.pub")}"
+    ssh-keys = "centos:${file("~/.ssh/id_rsa.pub")}"
   }
 }
