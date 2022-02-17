@@ -190,7 +190,7 @@ Playbook производит установку и настройку elasticse
 ```
 11. Готовый playbook выложите в свой репозиторий, в ответ предоставьте ссылку на него.
 ```
-
+https://github.com/AnantaHari/devops-netology/blob/main/08-ansible-03-yandex/playbook/site.yml
 ```
 
 ---
