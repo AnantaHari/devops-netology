@@ -1,0 +1,13 @@
+---
+- name: Assert elasticrole
+  hosts: ubuntu
+  roles:
+    - elasticsearch_role
+- name: Assert kibanarole
+  hosts: centos
+  roles:
+    - kibana_role
+- name: Assert filebeatrole
+  hosts: centos2
+  roles:
+    - filebeat_role

@@ -1,0 +1,8 @@
+---
+- name: restart filebeat
+  become: true
+  systemd:
+    name: filebeat
+    state: restarted
+    enabled: true
+  when: ansible_virtualization_type != 'docker'
