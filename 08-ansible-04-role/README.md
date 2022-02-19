@@ -36,6 +36,8 @@
 ```
 https://github.com/AnantaHari/filebeat-role
 https://github.com/AnantaHari/kibana-role
+https://github.com/AnantaHari/devops-netology/tree/main/08-ansible-04-role/playbook
+https://github.com/AnantaHari/devops-netology/blob/main/08-ansible-04-role/README.md
 
 ```
 
