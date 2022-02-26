@@ -1,0 +1,17 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Check centos service status
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: Set fact
+    command:
+      cmd: filebeat modules enable system
+      chdir: /usr/share/filebeat/bin
+    register: filebeat_modules
+    become: true
+  - name: Ensure status is correct
+    assert:
+      that: 
+        - filebeat_modules.stdout == 'Module system is already enabled'

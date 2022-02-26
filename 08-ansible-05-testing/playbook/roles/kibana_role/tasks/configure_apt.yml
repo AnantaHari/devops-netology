@@ -1,0 +1,17 @@
+---
+- name: Configure Kibana
+  become: true
+  template:
+    src: kibana.yml.j2
+    mode: 0644
+    dest: /etc/kibana/kibana.yml
+  notify: restart Kibana
+- name: Start ubuntu kibana server
+  when: server_type == 'apt'
+  command: ./etc/init.d/kibana start 
+  register: kibana_service_status
+  become: true
+  changed_when: kibana_service_status.stdout != 'kibana is already running'
+# - name: Print return information from the previous task
+#   ansible.builtin.debug:
+#     var: kibana_service_status.stdout

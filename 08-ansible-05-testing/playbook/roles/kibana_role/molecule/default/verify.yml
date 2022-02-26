@@ -1,0 +1,31 @@
+---
+# This is an example playbook to execute Ansible tests.
+
+- name: Check centos service status
+  hosts: centos7
+  gather_facts: false
+  tasks:
+  - name: Set fact
+    command: ./etc/rc.d/init.d/kibana status
+    register: kibana_service_status
+    become: true
+  - name: Print return information from the previous task
+    ansible.builtin.debug:
+      var: kibana_service_status.stdout
+  - name: Ensure status is correct
+    assert:
+      that: 
+        - kibana_service_status.stdout == 'kibana is running'
+
+- name: Check ubuntu service status
+  hosts: ubuntu
+  gather_facts: false
+  tasks:
+  - name: Set fact
+    command: ./etc/init.d/kibana status
+    register: kibana_service_status
+    become: true
+  - name: Ensure status is correct
+    assert:
+      that: 
+        - kibana_service_status.stdout == 'kibana is running'

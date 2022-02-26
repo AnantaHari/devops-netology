@@ -1,0 +1,3 @@
+---
+supported_systems: ['CentOS', 'Red Hat Enterprise Linux', 'Ubuntu', 'Debian']
+server_type: "{{ ansible_facts.pkg_mgr }}"
