@@ -1,0 +1,13 @@
+---
+- name: Assert create_file_module
+  hosts: localhost
+  tasks:
+    - name: Create file
+      my_own_namespace.yandex_cloud_elk.my_own_module:
+        path: ./another_one.txt
+        content: "and again"
+    - name: Run module without path
+      my_own_namespace.yandex_cloud_elk.my_own_module:
+        content: "some content"
+      register: without_path
+      changed_when: without_path is succeeded

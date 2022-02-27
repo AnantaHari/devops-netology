@@ -1,0 +1,13 @@
+---
+# - name: Some play
+#   hosts: all
+#   tasks:
+#     - name: Execute module
+#       my_own_namespace.yandex_cloud_elk.my_own_module:
+#         path: "{{ my_own_path }}"
+#         content: "{{ my_own_content }}"
+
+- name: Some role
+  hosts: all
+  roles:
+    - my_own_namespace.yandex_cloud_elk.my_own_module
