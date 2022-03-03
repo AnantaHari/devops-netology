@@ -27,8 +27,8 @@
 
 Если всё отработало в рамках ожидания - выгрузить схемы workflow для импорта в XML. Файлы с workflow приложить к решению задания.
 
-[bug](https://github.com/AnantaHari/devops-netology/blob/main/09-ci-01-intro/bug.xml)
-[other](https://github.com/AnantaHari/devops-netology/blob/main/09-ci-01-intro/other.xml)
+[bug.xml](https://github.com/AnantaHari/devops-netology/blob/main/09-ci-01-intro/bug.xml)  
+[other.xml](https://github.com/AnantaHari/devops-netology/blob/main/09-ci-01-intro/other.xml)  
 ---
 
 ### Как оформить ДЗ?
