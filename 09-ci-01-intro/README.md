@@ -26,10 +26,9 @@
 Перейти в scrum, запланировать новый спринт, состоящий из задач эпика и одного бага, стартовать спринт, провести задачи до состояния Closed. Закрыть спринт.
 
 Если всё отработало в рамках ожидания - выгрузить схемы workflow для импорта в XML. Файлы с workflow приложить к решению задания.
-```
-[bug](https://www.atlassian.com/ru/software/jira/free)
-[other](https://www.atlassian.com/ru/software/jira/free)
-```
+
+[bug.xml](https://github.com/AnantaHari/devops-netology/blob/main/09-ci-01-intro/bug.xml)  
+[other.xml](https://github.com/AnantaHari/devops-netology/blob/main/09-ci-01-intro/other.xml)  
 ---
 
 ### Как оформить ДЗ?
