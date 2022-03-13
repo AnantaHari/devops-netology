@@ -69,7 +69,7 @@
 ```
 Ответ
 ```
-[pom.xml](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-03-13%20в%2015.52.20.png)
+[pom.xml](https://github.com/AnantaHari/devops-netology/blob/main/09-ci-03-cicd/mvn/pom.xml)
 
 ---
 
