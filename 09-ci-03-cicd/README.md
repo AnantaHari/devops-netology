@@ -47,7 +47,7 @@
 ```
 Ответ
 ```
-[maven-metadata](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/maven-metadata.xml)
+[maven-metadata](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/maven-metadata.xml)  
 [Nexus](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-03-13%20в%2015.52.20.png)
 
 ### Знакомство с Maven
