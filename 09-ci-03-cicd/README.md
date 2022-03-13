@@ -25,6 +25,10 @@
 8. Запускаем анализатор повторно - проверяем, что QG пройдены успешно
 9. Делаем скриншот успешного прохождения анализа, прикладываем к решению ДЗ
 
+```
+Ответ
+```
+[SonarQube](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-03-13%20в%2015.45.30.png)
 
 ## Знакомство с Nexus
 
@@ -39,6 +43,12 @@
 2. В него же загружаем такой же артефакт, но с version: 8_102
 3. Проверяем, что все файлы загрузились успешно
 4. В ответе присылаем файл `maven-metadata.xml` для этого артефекта
+
+```
+Ответ
+```
+[maven-metadata](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/maven-metadata.xml)
+[Nexus](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-03-13%20в%2015.52.20.png)
 
 ### Знакомство с Maven
 
