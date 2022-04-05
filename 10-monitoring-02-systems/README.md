@@ -119,7 +119,7 @@ P.S.: если при запуске некоторые контейнеры б�
 * Connection #0 to host localhost left intact
 
 ```
-![Веб-интерфейс Chronograf](Снимок экрана 2022-04-05 в 16.17.30.png)
+![Веб-интерфейс Chronograf](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-02-systems/Снимок%20экрана%202022-04-05%20в%2016.17.30.png)
 
 4. Перейдите в веб-интерфейс Chronograf (`http://localhost:8888`) и откройте вкладку `Data explorer`.
 
