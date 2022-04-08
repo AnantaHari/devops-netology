@@ -72,7 +72,7 @@ node_filesystem_avail_bytes{fstype!~"tmpfs|fuse.lxcfs|squashfs"} / node_filesyst
 Для этого перейдите в настройки Dashboard, выберите в боковом меню "JSON MODEL".
 
 Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
-![Dashboard.json](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-03-grafana/Dashboard.json)
+[Dashboard.json](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-03-grafana/Dashboard.json)
 
 В решении задания - приведите листинг этого файла.
 ```
