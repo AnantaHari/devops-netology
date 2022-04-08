@@ -27,7 +27,7 @@
 
 Подключите поднятый вами prometheus как источник данных.
 
-Решение домашнего задания - скриншот веб-интерфейса grafana со списком подключенных Datasource.
+Решение домашнего задания - скриншот веб-интерфейса grafana со списком подключенных Datasource.  
 ![Datasources](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-03-grafana/Снимок%20экрана%202022-04-08%20в%2012.47.45.png)
 
 ## Задание 2
