@@ -54,6 +54,8 @@ dcf2bd098da9   logstash:7.16.2                           "/usr/local/bin/dock…
 9b9e58a71dec   python:3.9-alpine                         "python3 /opt/run.py"    2 days ago   Up About a minute                                                some_app
 5f97fa352d11   elasticsearch:7.16.2                      "/bin/tini -- /usr/l…"   2 days ago   Up About a minute   9200/tcp, 9300/tcp                           es-warm
 ```
+![Kibana](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-04-elk/Снимок%20экрана%202022-04-11%20в%2012.25.42.png)
+
 
 ## Задание 2
 
@@ -66,6 +68,13 @@ dcf2bd098da9   logstash:7.16.2                           "/usr/local/bin/dock…
 В манифесте директории help также приведенно dummy приложение, которое генерирует рандомные события в stdout контейнера.
 Данные логи должны порождать индекс logstash-* в elasticsearch. Если данного индекса нет - воспользуйтесь советами
 и источниками из раздела "Дополнительные ссылки" данного ДЗ.
+```
+Скриншоты логов и поиска по ним
+```
+![Kibana](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-04-elk/Снимок%20экрана%202022-04-13%20в%2013.56.27.png)
+![Kibana](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-04-elk/Снимок%20экрана%202022-04-13%20в%2014.07.53.png)
+![Kibana](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-04-elk/Снимок%20экрана%202022-04-13%20в%2014.10.19.png)
+
 
 ---
 
