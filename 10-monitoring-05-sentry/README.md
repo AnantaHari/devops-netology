@@ -16,6 +16,8 @@ Free cloud account имеет следующие ограничения:
 - далее следуйте инструкциям
 
 Для выполнения задания - пришлите скриншот меню Projects.
+![Projects](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-05-sentry/Снимок%20экрана%202022-04-13%20в%2018.54.56.png)
+
 
 ## Задание 2
 
@@ -27,6 +29,9 @@ Free cloud account имеет следующие ограничения:
 
 Для выполнения задание предоставьте скриншот `Stack trace` из этого события и список событий проекта, 
 после нажатия `Resolved`.
+![Stack trace](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-05-sentry/Снимок%20экрана%202022-04-13%20в%2019.29.13.png)
+![Resolved](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-05-sentry/Снимок%20экрана%202022-04-13%20в%2019.29.38.png)
+
 
 ## Задание 3
 
@@ -44,6 +49,8 @@ Free cloud account имеет следующие ограничения:
 Также проверьте проект в котором вы создаёте событие, возможно алёрт привязан к другому.
 
 Для выполнения задания - пришлите скриншот тела сообщения из оповещения на почте.
+![Alert](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-05-sentry/Снимок%20экрана%202022-04-16%20в%2010.37.31.png)
+
 
 Дополнительно поэкспериментируйте с правилами алёртинга. 
 Выбирайте разные условия отправки и создавайте sample events. 
