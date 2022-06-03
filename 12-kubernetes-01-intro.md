@@ -186,7 +186,7 @@ root@kuber:/home/anantahari# minikube addons list
 |-----------------------------|----------|--------------|--------------------------------|
 
 ```
-![Тестовое приложение](https://github.com/AnantaHari/devops-netology/blob/main/10-monitoring-03-grafana/Снимок%20экрана%202022-04-08%20в%2012.47.45.png)
+![Тестовое приложение](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-06-03%20в%2014.37.43.png)
 
 ## Задача 3: Установить kubectl
 
