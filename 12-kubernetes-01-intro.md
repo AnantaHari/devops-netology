@@ -204,6 +204,7 @@ root@kuber:/home/anantahari# minikube addons list
 - проверить работу приложения из задания 2, запустив port-forward до кластера
 ```
 kubectl port-forward hello-node-6b89d599b9-dftd7 8081:8080
+
 ```
 
 ## Задача 4 (*): собрать через ansible (необязательное)
