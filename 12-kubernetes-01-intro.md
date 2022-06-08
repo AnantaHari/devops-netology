@@ -141,6 +141,15 @@ root@kuber:/home/anantahari# minikube start --vm-driver=none
 - развернуть через Minikube тестовое приложение по [туториалу](https://kubernetes.io/ru/docs/tutorials/hello-minikube/#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BA%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D1%80%D0%B0-minikube)
 - установить аддоны ingress и dashboard
 ```
+root@kuber:/home/anantahari# minikube addons enable dashboard
+   ▪ Using image kubernetesui/dashboard:v2.3.1
+   ▪ Using image kubernetesui/metrics-scraper:v1.0.7
+💡  Some dashboard features require the metrics-server addon. To enable all features please run:
+
+ minikube addons enable metrics-server
+
+
+🌟  The 'dashboard' addon is enabled
 root@kuber:/home/anantahari# minikube addons enable ingress
     ▪ Using image k8s.gcr.io/ingress-nginx/controller:v1.1.1
     ▪ Using image k8s.gcr.io/ingress-nginx/kube-webhook-certgen:v1.1.1
@@ -193,6 +202,9 @@ root@kuber:/home/anantahari# minikube addons list
 Подготовить рабочую машину для управления корпоративным кластером. Установить клиентское приложение kubectl.
 - подключиться к minikube
 - проверить работу приложения из задания 2, запустив port-forward до кластера
+```
+kubectl port-forward hello-node-6b89d599b9-dftd7 8081:8080
+```
 
 ## Задача 4 (*): собрать через ansible (необязательное)
 
