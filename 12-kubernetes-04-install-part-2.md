@@ -12,7 +12,9 @@
 Сгенерировал hosts таким скриптом:
 declare -a IPS=(51.250.47.243 51.250.38.183 51.250.33.181)
  2503  CONFIG_FILE=inventory/mycluster/hosts.yaml python3 contrib/inventory_builder/inventory.py ${IPS[@]}
- Поправил hosts.yaml
+```
+ Поправил [hosts.yaml](https://github.com/AnantaHari/devops-netology/blob/main/12-kubernetes-04-install-part-2/hosts.yaml)
+```
  Выполнил разворачивание облака командой: ansible-playbook -i inventory/mycluster/hosts.yaml  --become --become-user=root cluster.yml
  Потом выполнил:
  {
