@@ -12,7 +12,9 @@
 Сгенерировал hosts таким скриптом:
 declare -a IPS=(51.250.47.243 51.250.38.183 51.250.33.181)
  2503  CONFIG_FILE=inventory/mycluster/hosts.yaml python3 contrib/inventory_builder/inventory.py ${IPS[@]}
- Поправил hosts.yaml
+```
+ Поправил [hosts.yaml](https://github.com/AnantaHari/devops-netology/blob/main/12-kubernetes-04-install-part-2/hosts.yaml)
+```
  Выполнил разворачивание облака командой: ansible-playbook -i inventory/mycluster/hosts.yaml  --become --become-user=root cluster.yml
  Потом выполнил:
  {
@@ -27,8 +29,9 @@ NAME    STATUS   ROLES           AGE   VERSION
 cp1     Ready    control-plane   16h   v1.24.2
 node1   Ready    <none>          16h   v1.24.2
 node2   Ready    <none>          16h   v1.24.2
-
-Потом скопировал себе файл конфиг:
+```
+Потом скопировал себе файл [конфиг](https://github.com/AnantaHari/devops-netology/blob/main/12-kubernetes-04-install-part-2/config):
+```
 scp yc-user@51.250.47.243:/home/yc-user/.kube/config /Users/anantahari/.kube
 Исправил в нем адрес, но подключиться не мог, т.к. для внешнего адреса небыло сертификата.
 Выполнил следующее на control node:
