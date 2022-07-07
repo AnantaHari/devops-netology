@@ -10,6 +10,9 @@
 ```
 Решение
 ```
+[stage.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config/stage.yaml)
+[stage-postgres.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config/stage-postgres.yaml)
+![Скриншот задания 1](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-07-07%20в%2021.12.28.png)
 
 
 ## Задание 2: подготовить конфиг для production окружения
@@ -21,6 +24,11 @@
 ```
 Решение
 ```
+[front.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config/front.yaml)
+[back.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config/back.yaml)
+[prod-postgres.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config/prod-postgres.yaml)
+![Скриншот задания 2](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-07-07%20в%2021.16.07.png)
+
 
 ## Задание 3 (*): добавить endpoint на внешний ресурс api
 Приложению потребовалось внешнее api, и для его использования лучше добавить endpoint в кластер, направленный на это api. Требования:
