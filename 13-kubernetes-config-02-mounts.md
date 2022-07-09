@@ -12,6 +12,11 @@
 * в поде подключена общая папка между контейнерами (например, /static);
 * после записи чего-либо в контейнере с беком файлы можно получить из контейнера с фронтом.
 
+```
+Решение
+```
+
+
 ## Задание 2: подключить общую папку для прода
 Поработав на stage, доработки нужно отправить на прод. В продуктиве у нас контейнеры крутятся в разных подах, поэтому потребуется PV и связь через PVC. Сам PV должен быть связан с NFS сервером. Требования:
 * все бекенды подключаются к одному PV в режиме ReadWriteMany;
@@ -126,4 +131,21 @@ kubectl get storageclasses.storage.k8s.io
 
 # Посмотреть список StorageClass (короткое имя)
 kubectl get sc
+```
+
+Это выдал helm
+```
+---
+    kind: PersistentVolumeClaim
+    apiVersion: v1
+    metadata:
+      name: test-dynamic-volume-claim
+    spec:
+      storageClassName: "nfs"
+      accessModes:
+        - ReadWriteOnce
+      resources:
+        requests:
+          storage: 100Mi
+
 ```
