@@ -15,6 +15,10 @@
 ```
 Решение
 ```
+[pod-int-volumes.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-02-mounts/pod-int-volumes.yaml)  
+![Скриншот задания 1](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-07-08%20в%2018.31.13.png)
+
+
 
 
 ## Задание 2: подключить общую папку для прода
@@ -22,6 +26,14 @@
 * все бекенды подключаются к одному PV в режиме ReadWriteMany;
 * фронтенды тоже подключаются к этому же PV с таким же режимом;
 * файлы, созданные бекендом, должны быть доступны фронту.
+```
+Решение
+```
+[10-front.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-02-mounts/10-front.yaml)  
+[10-back.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-02-mounts/10-back.yaml)  
+[pvc.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-02-mounts/pvc.yaml)  
+![Скриншот задания 2](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-07-09%20в%2010.30.38.png)
+
 
 ---
 
