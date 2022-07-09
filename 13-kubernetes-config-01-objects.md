@@ -10,8 +10,8 @@
 ```
 Решение
 ```
-[stage.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config/stage.yaml)  
-[stage-postgres.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config/stage-postgres.yaml)  
+[stage.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-01/stage.yaml)  
+[stage-postgres.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-01/stage-postgres.yaml)  
 ![Скриншот задания 1](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-07-07%20в%2021.12.28.png)
 
 
@@ -24,9 +24,9 @@
 ```
 Решение
 ```
-[front.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config/front.yaml)  
-[back.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config/back.yaml)  
-[prod-postgres.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config/prod-postgres.yaml)  
+[front.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-01/front.yaml)  
+[back.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-01/back.yaml)  
+[prod-postgres.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-01/prod-postgres.yaml)  
 ![Скриншот задания 2](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-07-07%20в%2021.16.07.png)
 
 
