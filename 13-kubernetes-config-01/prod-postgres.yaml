@@ -1,6 +1,6 @@
 # Config Postgres Pod
 apiVersion: apps/v1
-kind: StatefulSet
+kind: Deployment
 metadata:
   name: postgres
 spec:
@@ -80,5 +80,5 @@ spec:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
   nfs:
-    server: 10.0.2.15
+    server: 10.130.0.9
     path: /home/nfs

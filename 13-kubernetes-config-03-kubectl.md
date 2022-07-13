@@ -16,3 +16,19 @@
 Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
 
 ---
+
+kubectl completion --help
+cd 30-kubectl
+kubectl api-resources
+kubectl explain pod
+kubectl explain pod.spec
+kubectl explain pod.spec.containers
+kubectl describe nodes master
+kubectl describe nodes
+конфиг лежит в папке ~/.kube и относительного это пути указываются пути в конфиге
+cd 00-kube-config
+выполнили все из README
+cd ..
+kubectl delete -f . - удалить все
+kubectl -n namespace_name get pods -A | grep что_искать
+kubectl -n namespace_name logs -l app=имя_метки -c code --tail=5000 | grep что_искать | wc -l (wc -l считатет кол-во записей)
