@@ -9,8 +9,8 @@
 Решение
 ```
 [front.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-03-kubectl/front.yaml)  
-[back.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-03-kubectl/back.yaml) 
-[postgres-statefulset.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-03-kubectl/postgres-statefulset.yaml) 
+[back.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-03-kubectl/back.yaml)  
+[postgres-statefulset.yaml](https://github.com/AnantaHari/devops-netology/blob/main/13-kubernetes-config-03-kubectl/postgres-statefulset.yaml)  
 ![Скриншот 1 задания 1](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-07-13%20в%2010.04.51.png)
 ![Скриншот 2 задания 1](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-07-13%20в%2010.05.14.png)
 ![Скриншот 3 задания 1](https://github.com/AnantaHari/devops-netology/blob/main/screenshots/Снимок%20экрана%202022-07-13%20в%2010.05.49.png)
