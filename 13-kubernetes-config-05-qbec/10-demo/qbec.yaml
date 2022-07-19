@@ -1,0 +1,23 @@
+apiVersion: qbec.io/v1alpha1
+kind: App
+metadata:
+  name: 10-demo
+spec:
+  environments:
+    default:
+      defaultNamespace: default
+      server: https://51.250.47.243:6443
+      excludes:
+        - postgres
+        - rabbitmq
+    stage:
+      defaultNamespace: stage
+      server: https://51.250.47.243:6443
+    prod:
+      defaultNamespace: prod
+      server: https://51.250.47.243:6443
+      includes:
+        - hello2
+  vars: {}
+  excludes:
+    - hello2
