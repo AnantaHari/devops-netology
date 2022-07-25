@@ -23,3 +23,12 @@
 Выполненное домашнее задание пришлите ссылкой на .md-файл в вашем репозитории.
 
 ---
+
+Команды занятия
+cd 45-jsonnet/examples
+cd 46-qbec/10-demo
+kubectl create ns qbec
+идем по реадме из 46-qbec
+Для инициализации каталога с конфигами - 46-qbec/30-quick-tour.md
+qbec apply default
+kubectl -n misc exec multitool --curl -s demo.default
